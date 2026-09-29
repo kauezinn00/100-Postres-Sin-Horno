@@ -1,20 +1,11 @@
-PÁGINA 100 POSTRES SIN HORNO — ESTRUTURA TESORO DEL HERRERO
+100 POSTRES SIN HORNO — EDIÇÃO RÁPIDA
 
-A estrutura visual, classes, espaçamentos, mobile e hierarquia foram preservados do HTML original enviado.
+CHECKOUTS
+1. Abra index.html no GitHub.
+2. Use Ctrl+F / Buscar por: CHECKOUTS — EDITE SOMENTE ESTAS 2 LINHAS
+3. Cole os links aqui:
+   checkoutBasico: "SEU LINK"
+   checkoutCompleto: "SEU LINK"
+4. Salve/Commit.
 
-IMAGENS PARA SUBSTITUIR EM /images:
-- hero-principal.webp
-- amostra-1.webp ... amostra-10.webp
-- bonus-1.webp ... bonus-4.webp
-- pack-basico.webp
-- pack-premium.webp
-- prova-social-1.webp ... prova-social-3.webp
-
-CHECKOUTS:
-No final de index.html, procure CHECKOUT_BASIC e CHECKOUT_PREMIUM.
-
-PREÇOS LOCAIS:
-No mesmo script, edite o objeto PRICE caso queira mudar o preço psicológico por país.
-
-TRACKING:
-Os pixels/UTMify da oferta do ferreiro foram removidos de propósito para não contaminar os dados.
+As UTMs e fbclid existentes na URL são repassados automaticamente para o checkout.
