@@ -443,6 +443,171 @@ body{margin:0;background:var(--v2-bg)!important;color:var(--v2-ink)!important;fo
 }
 </style>
 
+
+<style id="v2-premium-guarantee-faq-css">
+/* Premium mais robusto, mantendo a estética clara da página */
+.v2-premium{
+  box-shadow:0 18px 48px rgba(145,91,30,.16)!important;
+}
+.v2-premium-base{
+  text-align:center;
+  margin:0 0 12px;
+  padding:9px 10px;
+  border-radius:10px;
+  background:#fff0c8;
+  border:1px solid #e9c369;
+  color:#6e4612;
+  font-size:11px;
+  letter-spacing:.055em;
+}
+.v2-premium-list{gap:8px!important}
+.v2-premium-list li{
+  position:relative;
+  padding-left:2px;
+}
+.v2-premium-list .v2-bonus-line{
+  background:#fff0c8;
+  color:#694616;
+  border:1px solid #efd188;
+  border-radius:9px;
+  padding:8px 9px;
+  font-weight:750;
+}
+.v2-premium-list .v2-bonus-line strong{
+  color:#b9152b;
+  font-weight:950;
+}
+.v2-best{
+  box-shadow:0 6px 14px rgba(185,21,43,.2);
+}
+
+/* Garantia centralizada inspirada na referência, adaptada para chocolate/dourado */
+.v2-guarantee-redesign{
+  padding:58px 0 54px;
+  background:
+    radial-gradient(circle at 50% 0%,rgba(242,195,75,.11),transparent 35%),
+    linear-gradient(180deg,#38231d 0%,#2d1a15 100%);
+}
+.v2-guarantee-center{
+  max-width:760px;
+  margin:0 auto;
+  text-align:center;
+}
+.v2-shield-large{
+  width:74px;
+  height:74px;
+  margin:0 auto 14px;
+  border:2px solid rgba(242,195,75,.42);
+  background:rgba(242,195,75,.12);
+  color:#f2c34b;
+  box-shadow:0 10px 28px rgba(0,0,0,.16);
+}
+.v2-guarantee-redesign .v2-section-kicker{
+  color:#f2c34b;
+  text-align:center;
+}
+.v2-guarantee-redesign h2{
+  max-width:720px;
+  margin:8px auto 12px;
+  color:#fff;
+}
+.v2-guarantee-center p{
+  max-width:680px;
+  margin:0 auto;
+  color:#eadfd9;
+  font-size:14px;
+  line-height:1.6;
+}
+.v2-guarantee-redesign .v2-guarantee-cta{
+  margin:20px auto 0;
+  background:linear-gradient(180deg,#f7cf62,#dfa92f);
+  color:#34251e;
+  border-radius:11px;
+  font-weight:950;
+}
+
+/* FAQ */
+.v2-faq-wrap{
+  max-width:820px;
+  margin:52px auto 0;
+}
+.v2-faq-kicker{
+  margin-bottom:7px;
+}
+.v2-faq-heading{
+  text-align:center;
+  margin:0 auto 22px!important;
+  font-size:30px!important;
+}
+.v2-faq-list{
+  display:grid;
+  gap:10px;
+}
+.v2-faq-item{
+  overflow:hidden;
+  border-radius:13px;
+  border:1px solid rgba(242,195,75,.2);
+  background:rgba(255,255,255,.045);
+}
+.v2-faq-question{
+  width:100%;
+  border:0;
+  outline:0;
+  background:transparent;
+  color:#fff;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:18px;
+  text-align:left;
+  padding:16px 18px;
+  font-size:14px;
+  font-weight:850;
+  cursor:pointer;
+}
+.v2-faq-plus{
+  flex:0 0 auto;
+  width:27px;
+  height:27px;
+  border-radius:50%;
+  display:grid;
+  place-items:center;
+  background:rgba(242,195,75,.13);
+  color:#f2c34b;
+  border:1px solid rgba(242,195,75,.22);
+  font-size:20px;
+  line-height:1;
+  transition:transform .22s ease;
+}
+.v2-faq-answer{
+  max-height:0;
+  overflow:hidden;
+  transition:max-height .28s ease;
+}
+.v2-faq-answer p{
+  margin:0;
+  padding:0 18px 16px;
+  color:#d9cbc4;
+  font-size:13px;
+  line-height:1.55;
+}
+.v2-faq-item.is-open .v2-faq-answer{
+  max-height:220px;
+}
+.v2-faq-item.is-open .v2-faq-plus{
+  transform:rotate(45deg);
+}
+@media(max-width:780px){
+  .v2-guarantee-redesign{padding:44px 0 42px}
+  .v2-faq-wrap{margin-top:40px}
+  .v2-faq-heading{font-size:26px!important}
+  .v2-faq-question{font-size:13px;padding:14px 14px}
+  .v2-faq-answer p{padding:0 14px 14px;font-size:12.5px}
+  .v2-premium-base{font-size:10.5px}
+  .v2-premium-list .v2-bonus-line{padding:7px 8px}
+}
+</style>
+
 </head><body>
 <!-- Meta Pixel Code (noscript) -->
 <noscript><img height="1" src="https://www.facebook.com/tr?id=1391752672288761&amp;ev=PageView&amp;noscript=1" style="display:none" width="1"/></noscript>
@@ -546,18 +711,27 @@ body{margin:0;background:var(--v2-bg)!important;color:var(--v2-ink)!important;fo
 <p class="v2-card-note">Al elegir el Básico verás una oferta especial antes de continuar.</p>
 </article>
 <article class="v2-offer-card theme-offer-card v2-premium reveal-right">
-<div class="v2-best">MÁS COMPLETO</div>
+<div class="v2-best">MÁS COMPLETO · MEJOR VALOR</div>
 <div class="v2-card-label">KIT COMPLETO</div>
 <img alt="Kit Completo" loading="lazy" src="images/pack-premium.png"/>
-<h3>Para empezar a vender con un plan</h3>
-<ul>
-<li>✓ Todo lo incluido en el Kit Básico</li>
-<li>✓ Plan de ventas de 7 días</li>
-<li>✓ Guía de empaques rentables</li>
-<li>✓ Catálogo de fechas especiales</li>
-<li>✓ Guía de precios y ganancias</li>
-<li>✓ Errores que te impiden vender más</li>
+<h3>Todo para empezar a vender con un plan</h3>
+
+<div class="v2-premium-base">
+<strong>INCLUYE TODO EL KIT BÁSICO +</strong>
+</div>
+
+<ul class="v2-premium-list">
+<li>✓ 100 recetas sin horno con ingredientes y paso a paso</li>
+<li>✓ Calculadora de costos para saber cuánto cobrar</li>
+<li>✓ Tabla de precios sugeridos</li>
+<li>✓ Plan de ventas de 7 días paso a paso</li>
+<li class="v2-bonus-line"><strong>BONO 1:</strong> Guía de empaques rentables</li>
+<li class="v2-bonus-line"><strong>BONO 2:</strong> Catálogo de fechas especiales</li>
+<li class="v2-bonus-line"><strong>BONO 3:</strong> Guía de precios y ganancias</li>
+<li class="v2-bonus-line"><strong>BONO 4:</strong> Errores que te impiden vender más</li>
+<li>✓ Acceso digital inmediato y de por vida</li>
 </ul>
+
 <div class="v2-price"><small>HOY</small><strong data-current-price="premium">US$ 12.90</strong></div>
 <a class="v2-buy" data-checkout="premium" href="#">QUIERO EL KIT COMPLETO</a>
 <p class="v2-card-note">Pago único · acceso inmediato · sin mensualidades</p>
@@ -566,15 +740,95 @@ body{margin:0;background:var(--v2-bg)!important;color:var(--v2-ink)!important;fo
 <p class="v2-fx">💱 Conversión actualizada en tiempo real según tu país. El valor final se confirma en el checkout.</p>
 </div>
 </section>
-<section class="v2-guarantee">
-<div class="v2-shell v2-guarantee-box reveal-scale">
-<div class="v2-shield">✓</div>
-<div>
-<div class="v2-section-kicker">GARANTÍA DE 7 DÍAS</div>
-<h2>Pruébalo con tranquilidad</h2>
-<p>Accede al material, revisa las recetas y las herramientas. Si decides que no es para ti dentro del plazo de garantía, puedes solicitar el reembolso según las condiciones de la compra.</p>
-<button class="v2-secondary-cta v2-guarantee-cta" onclick="scrollToOfferComparison()">QUIERO EMPEZAR AHORA</button>
-</div>
+<section class="v2-guarantee v2-guarantee-redesign">
+<div class="v2-shell">
+
+  <div class="v2-guarantee-center reveal-scale">
+    <div class="v2-shield v2-shield-large">✓</div>
+    <div class="v2-section-kicker">GARANTÍA TOTAL DE 7 DÍAS</div>
+    <h2>Pruébalo durante 7 días con tranquilidad</h2>
+    <p>
+      Accede al material completo, revisa las recetas, la calculadora de costos,
+      los precios y el plan de ventas. Si dentro de los primeros 7 días decides
+      que no es para ti, puedes solicitar el reembolso según las condiciones de tu compra.
+    </p>
+    <button class="v2-secondary-cta v2-guarantee-cta" onclick="scrollToOfferComparison()">
+      QUIERO EMPEZAR AHORA
+    </button>
+  </div>
+
+  <div class="v2-faq-wrap">
+    <div class="v2-section-kicker v2-faq-kicker">PREGUNTAS FRECUENTES</div>
+    <h2 class="v2-faq-heading">Antes de empezar, resuelve tus dudas</h2>
+
+    <div class="v2-faq-list">
+
+      <div class="v2-faq-item">
+        <button class="v2-faq-question" type="button" aria-expanded="false">
+          <span>¿Cómo recibo mi acceso?</span><span class="v2-faq-plus">+</span>
+        </button>
+        <div class="v2-faq-answer">
+          <p>El acceso es digital y se libera después de la confirmación del pago. Podrás consultar el material desde tu celular o computadora.</p>
+        </div>
+      </div>
+
+      <div class="v2-faq-item">
+        <button class="v2-faq-question" type="button" aria-expanded="false">
+          <span>¿Necesito experiencia en repostería?</span><span class="v2-faq-plus">+</span>
+        </button>
+        <div class="v2-faq-answer">
+          <p>No. Las recetas fueron organizadas con ingredientes y paso a paso para que puedas empezar incluso si tienes poca experiencia.</p>
+        </div>
+      </div>
+
+      <div class="v2-faq-item">
+        <button class="v2-faq-question" type="button" aria-expanded="false">
+          <span>¿Necesito horno o equipos caros?</span><span class="v2-faq-plus">+</span>
+        </button>
+        <div class="v2-faq-answer">
+          <p>No. El pack está enfocado en postres sin horno y en preparaciones que puedas hacer desde casa sin montar una cocina profesional.</p>
+        </div>
+      </div>
+
+      <div class="v2-faq-item">
+        <button class="v2-faq-question" type="button" aria-expanded="false">
+          <span>¿Los costos y precios sirven para mi país?</span><span class="v2-faq-plus">+</span>
+        </button>
+        <div class="v2-faq-answer">
+          <p>Sí. La calculadora sirve para colocar tus propios costos locales. Los precios sugeridos son una referencia para ayudarte a definir tu margen.</p>
+        </div>
+      </div>
+
+      <div class="v2-faq-item">
+        <button class="v2-faq-question" type="button" aria-expanded="false">
+          <span>¿Qué diferencia hay entre el Kit Básico y el Kit Completo?</span><span class="v2-faq-plus">+</span>
+        </button>
+        <div class="v2-faq-answer">
+          <p>El Básico trae las recetas y herramientas esenciales. El Completo suma el plan de ventas de 7 días y los 4 bonos para ayudarte con empaques, fechas especiales, precios, ganancias y errores de venta.</p>
+        </div>
+      </div>
+
+      <div class="v2-faq-item">
+        <button class="v2-faq-question" type="button" aria-expanded="false">
+          <span>¿El pago es único?</span><span class="v2-faq-plus">+</span>
+        </button>
+        <div class="v2-faq-answer">
+          <p>Sí. Es un pago único, sin mensualidades recurrentes.</p>
+        </div>
+      </div>
+
+      <div class="v2-faq-item">
+        <button class="v2-faq-question" type="button" aria-expanded="false">
+          <span>¿Cómo funciona la garantía de 7 días?</span><span class="v2-faq-plus">+</span>
+        </button>
+        <div class="v2-faq-answer">
+          <p>Después de comprar, tienes el plazo de garantía informado para revisar el material. Si decides que no es para ti, puedes solicitar el reembolso dentro de ese plazo según las condiciones de la compra.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
 </div>
 </section>
 <footer class="v2-footer">100 Postres Sin Horno para Vender · Producto digital · Acceso inmediato</footer>
@@ -895,6 +1149,20 @@ function scrollToOfferComparison(){
   carousel.addEventListener('touchend',()=>{userInteracting=false;start();},{passive:true});
 
   start();
+})();
+</script>
+
+
+<script id="v2-faq-script">
+(function(){
+  document.querySelectorAll('.v2-faq-question').forEach(function(btn){
+    btn.addEventListener('click',function(){
+      const item=btn.closest('.v2-faq-item');
+      if(!item) return;
+      const open=item.classList.toggle('is-open');
+      btn.setAttribute('aria-expanded',open?'true':'false');
+    });
+  });
 })();
 </script>
 
